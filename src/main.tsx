@@ -8,3 +8,4 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <App />
   </React.StrictMode>
 )
+console.log(`🐒 -> import.meta.env.BASE_URL`, import.meta.env.BASE_URL);
