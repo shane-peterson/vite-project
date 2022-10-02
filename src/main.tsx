@@ -9,5 +9,4 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   </React.StrictMode>
 )
 console.log(import.meta.url);
-console.log(import.meta.env.VITE_SOME_KEY) // 123
-console.log(import.meta.env.DB_PASSWORD) // undefined
+console.log(import.meta.env.VITE_APP_TITLE) // 123
