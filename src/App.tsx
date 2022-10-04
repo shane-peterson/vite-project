@@ -1,5 +1,4 @@
 import '@/App.css';
-import reactLogo from '@/assets/react.svg';
 import { useState } from 'react';
 
 function App() {
@@ -7,31 +6,43 @@ function App() {
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={import.meta.env.BASE_URL + "vite.svg"} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className="div.bg-red-500">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <div className="card ">
+        <button
+          className="focus:bg-blue-500 "
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
         </button>
-        <div className="bg-red-500 uppercase">hello world</div>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
-        ...
-      </button>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <ol>
+        <li>
+          <a href="#p1">Jump to the 1 paragraph!</a>
+        </li>
+        <li>
+          <a href="#p2">Jump to the 2 paragraph!</a>
+        </li>
+        <li>
+          <a href="#p3">Jump to the 3 paragraph!</a>
+        </li>
+      </ol>
+      <h3>My Fun Article</h3>
+      <p id="p1" className="target:bg-yellow-400 target:before:content-['►']">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquid
+        assumenda adipisci quis pariatur rerum impedit officia praesentium
+        similique iure maiores numquam itaque laborum deserunt, animi nobis
+        vitae, reprehenderit soluta!
       </p>
-      p.bg-red-50
+      <p id="p2" className="target:bg-yellow-400 target:before:content-['►']">
+        Fugiat labore laboriosam ab ex quod! Doloribus, facilis sint libero
+        accusantium quasi assumenda. Saepe distinctio voluptates assumenda
+        recusandae suscipit aut reprehenderit, nemo voluptatum eligendi fugit
+        quam, rerum similique obcaecati sapiente.
+      </p>
+      <p id="p3" className="target:bg-yellow-400 target:before:content-['►']">
+        Nobis nostrum at fugiat iste, nihil unde tempore blanditiis odio quod
+        vel. Dolor vitae accusantium ut similique, explicabo et eius modi!
+        Porro, dicta fugiat id incidunt facilis quasi eaque nostrum.
+      </p>
     </div>
   );
 }
