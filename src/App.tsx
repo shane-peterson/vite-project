@@ -1,12 +1,13 @@
+import REACT from '@/assets/react.svg';
 function App() {
   return (
-    <span className="flex items-center">
-      <img src="/vite.svg" />
+    <div className="flex items-center">
+      <img src={REACT} alt="react.svg" />
       <div>
         <strong>Andrew Alfred</strong>
         <span>Technical advisor</span>
       </div>
-    </span>
+    </div>
   );
 }
 
